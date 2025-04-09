@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <ItemGroup>
+    <Protobuf Include="proto\run_function.proto" GrpcServices="Server">
+      <SourceUrl>https://raw.githubusercontent.com/crossplane/crossplane/refs/heads/release-1.19/apis/apiextensions/fn/proto/v1/run_function.proto</SourceUrl>
+    </Protobuf>
+  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" />
+      <PackageReference Include="Microsoft.OpenApi" />
+      <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" />
+      <PackageReference Include="OpenTelemetry.Extensions.Hosting" />
+      <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" />
+      <PackageReference Include="OpenTelemetry.Instrumentation.Http" />
+    </ItemGroup>
+</Project>
